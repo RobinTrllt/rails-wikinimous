@@ -1,0 +1,7 @@
+<div class="container">
+  <h1>Write an article:</h1>
+  <div class="form">
+    <%= render "form", article: @article %>
+  </div>
+  <span class="btn" id="back"><%= link_to("Back to Articles", articles_path) %></span>
+</div>

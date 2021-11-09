@@ -7,9 +7,16 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;400;700&family=Dosis:wght@300;600&family=Roboto+Slab:wght@100;400&display=swap" rel="stylesheet">
   </head>
 
   <body>
+  <div class="header">
+    <h4>Robinimous</h4>
+    <p class="btn" id= "newarticle"><%= link_to("+ Add a new article", new_article_path) %></p>
+  </div>
     <%= yield %>
   </body>
 </html>
